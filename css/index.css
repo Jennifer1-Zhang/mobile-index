@@ -1,0 +1,253 @@
+body{
+	background-color: #f5f5f5;
+}
+/*container包裹层*/
+.container{
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	margin: 0 auto;
+}
+/*搜素区*/
+.search{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	z-index: 1000;
+}
+.search-box{
+	background-color: rgba(201,21,35,0);
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+}
+.search-box .icon-logo{
+	position: absolute;
+	left: 10px;
+	top:4px;
+	width: 60px;
+	height: 36px;
+	background-position: 0 -103px;
+
+}
+.search-box form{
+	width: 100%;
+	padding:0 50px 0 70px;
+	height: 40px;
+	position: relative;
+}
+.search-box form .icon-search{
+	position: absolute;
+	top:10px;
+	left:80px;
+	width: 20px;
+	height: 20px;
+	background-position:-60px -109px;	
+}
+
+.search-box form input{
+	width: 100%;
+	height: 30px;
+	margin: 5px 0;
+	border-radius: 10px;
+	background-color: #fff;
+	padding-left: 40px;
+}
+.search-box .login{
+	position: absolute;
+	right:0;
+	top: 0;
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+/*轮播图区*/
+.banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.banner ul:first-child{
+	width: 1000%;
+	 transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+}
+.banner ul:first-child li{
+	width: 10%;
+	float: left;
+}
+.banner ul:first-child li a{
+	width: 100%;
+}
+.banner ul:first-child li a img{
+	width: 100%;
+}
+.banner ul:last-child{
+	position: absolute;
+	bottom:10px;
+	left:50%;
+	width: 118px;
+	height: 6px;
+	margin-left: -59px;
+}
+.banner ul:last-child li{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border:1px solid #fff;
+	margin-left: 10px;
+	float: left;
+}
+.banner ul:last-child li:first-child{
+	margin-left: 0px;
+}
+.banner ul:last-child li.now{
+	background-color: #fff;
+}
+/*导航区*/
+.nav{
+	width: 100%;
+	background-color: #fff;
+	border-bottom:1px solid #ccc;
+	box-shadow: 0 0 2px #ccc;
+}
+.nav ul{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav ul li{
+	width: 25%;
+	float: left;
+}
+.nav ul li a{
+	display: block;
+	width: 100%;
+}
+.nav ul li a img{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin:0 auto;
+}
+.nav ul li a p{
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+    padding: 5px 0;
+}
+/*产品区*/
+.product{
+	padding: 0 5px;
+}
+/*产品盒子*/
+.product .product-box{
+	background-color: #fff;
+	margin-top:10px;
+	box-shadow: 0 0 2px #ccc;
+}
+.product .product-box .title{
+	height: 34px;
+	line-height: 34px;
+	border-bottom: 1px solid #ddd;
+}
+.product .product-box .title.no-bottom{
+	border-bottom: none;
+	padding-right: 10px;
+}
+.product .product-box .title h3{
+	font-weight: normal;
+	padding-left: 23px;
+	position: relative;
+}
+.product .product-box .title h3::before{
+	content: "";
+	width: 3px;
+	height: 12px;
+	background-color: #d8505c;
+	position: absolute;
+	left:10px;
+	top:11px;
+}
+/*秒杀区*/
+.sedskill .title .icon{
+	float: left;
+	width: 16px;
+	height: 20px;
+	background: url('../images/seckill-icon.png') no-repeat center / 16px 20px;
+	margin-left: 10px;
+	margin-top: 7px;
+}
+.sedskill .title .name{
+	float: left;
+	font-size: 16px;
+	color: #d8505c;
+	margin-left:10px;
+
+}
+.sedskill .title .time{
+	float: left;
+	margin-right: 10px;
+}
+.sedskill .title .time span{
+	float: left;
+	background-color: #333;
+	color: #fff;
+	margin-top:9px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	margin-left:3px;
+}
+.sedskill .time span:nth-child(3n){
+	background-color: #fff;
+	color: #333;
+	width: 3px;
+	margin-left: 0;
+}
+.sedskill .content{
+	width: 100%;
+}
+.sedskill .content ul{
+	width: 100%;
+}
+.sedskill .content ul li{
+	width: 33.333%;
+	float: left;
+}
+.sedskill .content ul li a{
+	display: block;
+	width: 100%;
+	border-right: 1px solid #ddd;
+}
+.sedskill .content ul li a img{
+	display: block;
+    margin: 0 auto;
+	width: 64%;
+}
+.sedskill .content ul li:last-child a{
+	border-right:none;
+}
+.sedskill .content ul li .price{
+	width: 100%;
+	font-size: 12px;
+	padding: 5px 0;
+}
+.sedskill .content ul li .price .now-price{
+	color: #d8505c;
+	text-align: center;
+	padding: 5px 0;
+}
+.sedskill .content ul li .price .old-price{
+	color: #777;
+	text-decoration: line-through;
+	text-align: center;
+}

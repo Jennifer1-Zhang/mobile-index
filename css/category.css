@@ -1,0 +1,133 @@
+html,body{
+    height: 100%;
+}
+.cate-wrap{
+    width: 100%;
+    height: 100%;
+}
+/* 头部通栏搜索区 */
+.cate-wrap .cate-header{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    background: url('../images/header-bg.png') 0 0 / 1px 44px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.cate-wrap .cate-header a{
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.cate-wrap .cate-header .icon-back{
+    left:0;
+    background-position: -20px 0;
+}
+.cate-wrap .cate-header .icon-menu{
+    right:0;
+    background-position: -60px 0;
+}
+.cate-wrap .cate-header form{
+    width: 100%;
+    height: 100%;
+    padding: 7px 40px;
+    vertical-align: middle;
+}
+.cate-wrap .cate-header form input{
+    width: 100%;
+    height: 31px;
+    padding:5px 10px;
+    border-radius: 3px;
+    border:1px solid #ccc;
+}
+/* content内容区 */
+.cate-content{
+    width: 100%;
+    height: 100%;
+    padding-top:45px;
+}
+.cate-content .aside{
+    float: left;
+    height: 100%;
+    width: 90px;
+    background-color: #fff;
+    /* 去除滚动条，实现触摸竖向滑动，类似轮播图 */
+    overflow: hidden; 
+}
+.cate-content .main{
+    height: 100%;
+    overflow: hidden;
+}
+/*内容左侧aside区 */
+.cate-content .aside ul{
+    width: 100%;
+}
+.cate-content .aside ul li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f3f4f5;
+    font-size: 14px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.cate-content .aside ul li a{
+    display: block;
+    width: 100%;
+}
+.cate-content .aside ul li.now{
+    border-right: none;
+    background-color: #fff;
+}
+.cate-content .aside ul li.now a{
+    color: #d8505c;
+}
+/* 内容右侧main区 */
+.cate-content .main .main-box{
+    width: 100%;
+    padding: 10px;
+}
+.cate-content .main .main-box .banner{
+    display: block;
+    width: 100%;
+}
+.cate-content .main .main-box .banner img{
+    width:100%;
+    display: block;
+}
+.cate-content .main .main-box .cate-box{
+    width: 100%;
+    margin:10px 0;
+}
+.cate-content .main .main-box .cate-box h3{
+    font-size: 14px;
+}
+.cate-content .main .main-box .cate-box ul{
+    width: 100%;
+}
+.cate-content .main .main-box .cate-box ul li{
+    width: 33.333%;
+    float: left;
+    padding-top:5px;
+}
+.cate-content .main .main-box .cate-box ul li a{
+    display: block;
+    width: 100%;
+}
+.cate-content .main .main-box .cate-box ul li a img{
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin:0 auto;
+}
+.cate-content .main .main-box .cate-box ul li a p{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+}

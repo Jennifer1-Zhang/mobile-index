@@ -1,0 +1,76 @@
+/*reset.css*/
+*,
+*::before,
+*::after{
+	margin:0;
+	padding: 0;
+	/*手机流式布局宽度必须包括border*/
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	/*轻击或轻触高亮,透明色transparent*/
+	tap-highlight-color:transparent;
+	-webkit-tap-highlight-color:transparent;
+}
+body{
+	font-size: 14px;
+	font-family: "Microsoft YaHei",sans-serif;
+	color: #333;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+input,textarea{
+	border:none;
+	outline: none;
+	/*针对 textarea 右下角拉伸，设置不准拉伸*/
+	resize: none;
+	/*移动端：input元素的外观设置为没有任何样式*/
+	-webkit-appearance:none;
+}
+
+/*common.css*/
+/*左右浮动类*/
+.f-left{
+	float: left;
+}
+.f-right{
+	float: right;
+}
+/*清除浮动*/
+.clear-fix::before,
+.clear-fix::after{
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+/*组合样式*/
+.w-50{
+	width: 50%;
+}
+.w-50 img{
+	display: block;
+	width: 100%;
+}
+.b-left{
+	border-left:1px solid #ddd;
+}
+.b-right{
+	border-right:1px solid #ddd;
+}
+.b-bottom{
+	border-bottom:1px solid #ddd;
+}
+/*精灵图*/
+[class^="icon-"],[class*=" icon-"]{
+	background-image: url('../images/sprites.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: 200px 200px;
+	background-size: 200px 200px;
+}
