@@ -17,7 +17,7 @@ var search=function () {
 	window.onscroll=function (){
 		//bug:当文档声明了<!DOCTYPE html>,则不能使用document.body.scrollTop
 		// var scrollTop=document.body.scrollTop;
-		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+		var scrollTop=document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
 		var opacity=0;
 		if(scrollTop<bannerHeight){
 			opacity=scrollTop/bannerHeight*0.85;
